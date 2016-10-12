@@ -1,0 +1,39 @@
+Hay tres tipos básicos de enunciados:
+
+°facts. a mean for stating that a relation holds between objets
+	father(javier, ariel)
+	-facts are alse called unit clauses
+	
+	where javier and ariel are individuals
+°rules. mean for expressing new or complex queries in terms of simple queries
+	son(X,Y):- father(Y,X), male(X).
+
+°queries. a mean of retreaving information from a logic program (a finit set of facts)
+
+*rules, facts and queries are also called HORN clauses or just clauses
+*predicates and atoms begin with lowercase.
+*In order to differentiate queries and facts, a dot is used at the end of a fact and a question
+ mark is used at the end of a query
+
+Hay una única estructura de datos	
+°logical term
+
+Some other terms:
+*Relations are also called Facts
+*Atoms 
+*Logical variables correspond to unspecified individual
+*Compound terms. A functor and a sequence of one or more arguments
+*ground: queries, goals and terms where variables do not occur 
+*notGround: queries, goals and terms where variables do occur
+*substitution
+*instance
+	father(javier, ariel) is an instance of father(javier, X)
+*conjunction queries
+	father(a,X), father(X,Y)  //this is a conjunctive query with a shared variable
+*iterative clause. clauses with one goal
+	
+
+
+*Deduction Rules
+	+identity
+	
